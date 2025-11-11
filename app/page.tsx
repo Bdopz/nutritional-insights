@@ -64,7 +64,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    fetch('https://diet-analysis-josephsabo-gufng2dpckhzcteg.canadacentral-01.azurewebsites.net/api/getall')
+    fetch('https://nutritional-functions.azurewebsites.net/api/getall')
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -93,19 +93,19 @@ export default function Home() {
             <div className="bg-white p-4 shadow-lg rounded-lg">
               <h3 className="font-semibold">Bar Chart</h3>
               <p className="text-sm text-gray-600">Average macronutrient content by diet type.</p>
-              <img src="https://diet-analysis-josephsabo-gufng2dpckhzcteg.canadacentral-01.azurewebsites.net/api/images/barchart" />
+              <img src="https://nutritional-functions.azurewebsites.net/api/images/barchart" />
             </div>
 
             <div className="bg-white p-4 shadow-lg rounded-lg">
               <h3 className="font-semibold">Scatter Plot</h3>
               <p className="text-sm text-gray-600">Nutrient relationships (e.g., protein vs carbs).</p>
-              <img src="https://diet-analysis-josephsabo-gufng2dpckhzcteg.canadacentral-01.azurewebsites.net/api/images/scatterplot" />
+              <img src="https://nutritional-functions.azurewebsites.net/api/images/scatterplot" />
             </div>
 
             <div className="bg-white p-4 shadow-lg rounded-lg">
               <h3 className="font-semibold">Heatmap</h3>
               <p className="text-sm text-gray-600">Nutrient correlations.</p>
-              <img src="https://diet-analysis-josephsabo-gufng2dpckhzcteg.canadacentral-01.azurewebsites.net/api/images/heatmap" />
+              <img src="https://nutritional-functions.azurewebsites.net/api/images/heatmap" />
             </div>
           </div>
         </section>
